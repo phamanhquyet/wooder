@@ -1,0 +1,235 @@
+
+// custom swiper
+.swiper {
+  width: 100%;
+  
+  position: relative;
+  &-navication{
+    bottom: 32px;
+    left: 32px;
+   
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+  &-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    color: $primary;
+    font-size: 14px;
+    span{
+      display: block;
+      height: 4px;
+      width: 42px;
+      background-color: $primary !important;
+     
+    }
+    p{
+      font-size: 42px;
+      font-weight: bold;
+      color: $primary;
+      margin:0px 15px ;
+    }
+
+  }
+  &-pagination{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform: translateY(138%)
+  }
+  &-button{
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    &-next{
+      &::after{
+        display: none;
+      }
+      span{
+        transform: translate(34%, -37%);
+      }
+      
+    }
+    &-prev{
+      left: -7%;
+      &::after{
+        display: none;
+      }
+      span{
+        transform: translate(-34%, -37%);
+      }
+    }
+    &-next,&-prev{
+      span{
+        width: 28px;
+        height: 1px;
+        color: white;
+        background-color: #ffffff;
+      }
+      i{
+        font-size: 15px;
+        color: white;
+
+      }
+      position: relative;
+      width: 65px;
+      height: 30px;
+      background-color: transparent;
+      border: 2px solid #fff  !important ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s ease;
+      &:hover{
+        background-color: $primary;
+      }
+    }
+  }
+}
+.swiper-pagination-bullet{
+  width: 10px !important;
+  // height: 10px !important;
+  margin: 4px !important;
+  background-color: #303030;
+  overflow: inherit;
+}
+.swiper-pagination-bullet-active{
+  background-color: $primary;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.slider {
+  // min-height: 80vh;
+  max-height: 100vh;
+  width: 100%;
+
+  z-index: 1;
+
+  &__item {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      min-height: 80vh;
+      object-fit: cover;
+      @include sm{
+        min-height: 55vh;
+      }
+    }
+
+    &__content {
+      position: absolute;
+      z-index: 2;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__title {
+      font-size: 83.33px;
+      color: $primary;
+      text-transform: uppercase;
+      letter-spacing: 20px;
+      font-weight: bold;
+      @include sm{
+        font-size: 63.33px;
+        letter-spacing: 5px;
+      }
+
+    }
+
+    &__button {
+      position: relative;
+      cursor: pointer;
+      margin: 50px 0;
+      // width: 255px;
+      // height: 30px;
+      padding: 20px 27px;
+      border: 2px solid #fff;
+      background-color: transparent;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-size: 14px;
+      color: #fff;
+      overflow: hidden;
+      @include sm {
+        padding: 10px 15px;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -50px;
+        width: 150%;
+        height: 100%;
+        background-color: $primary;
+        transform: scaleX(0) skewX(35deg);
+        transform-origin: left;
+        z-index: -1;
+        transition: transform 1s;
+      }
+      &:hover::before{
+        transform: scaleX(1) skewX(35deg);
+      }
+
+    }
+
+    &__learnMore {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        display: block;
+        width: 27px;
+        height: 1px;
+        background-color: #fff;
+        transform: translate(27%, -50%);
+        margin-left: 10px;
+      }
+    }
+
+  }
+}

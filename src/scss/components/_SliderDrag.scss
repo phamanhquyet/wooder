@@ -1,0 +1,31 @@
+.SliderDrag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    display: flex;
+    flex-wrap: nowrap;
+    /* Đảm bảo các box không bị wrap xuống dòng */
+    overflow-x: auto;
+
+    margin-bottom: 40px;
+    @include sm {
+        width: 100%;
+        padding: 0 calc(var(--gap) / 2);
+        margin: 0 auto;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        flex-shrink: 1;
+
+        &__item {
+            
+            img {
+                display: block;
+                min-width: max-content;
+            }
+            height: 100%;
+             flex-shrink: 0;
+
+        }
+    }
+}

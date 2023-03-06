@@ -1,0 +1,113 @@
+.video{
+    text-align: center;
+    margin-bottom:calc(67px + 57px) ;
+    &__title{
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        position: relative;
+        &::after{
+            content: '';
+            width: 38px;
+            height: 4px;
+            background-color: $primary;
+            position: absolute;
+            top: calc(100% + 21px) ;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle{
+        text-align: center !important;
+        max-width: 470px;
+        font-size: 16px;
+        letter-spacing: normal;
+        margin: 0 auto;
+        color: rgb(134, 134, 134);
+    }
+
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 65px;
+        @include sm{
+            flex-direction: column;
+        }
+       
+    }
+    &__item{
+        width: 33.333333%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include sm{
+            width: 100%;
+        }
+        
+    }
+    &__cand{
+        
+        
+        width: 228px;
+        height: 228px;
+        border-radius: 50%;
+        border: 1px solid #e6e6e6;
+        position: relative;
+        cursor: pointer;
+        padding: 13px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include sm{
+            margin-bottom: 23%
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: calc(100% + 20px) ;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 1px;
+            width: 22px;
+            background-color: $primary;
+        }
+        img{
+            // position: absolute;
+            left:50%;
+            top: 50%;
+            width: 200px;
+            // transform: translate(-50%,-50%);
+            z-index: 99;
+        }
+        &__play{
+            background-color:rgb(#a18e6c,0.8) ;
+            position: absolute;
+            left:50%;
+            top: 50%;
+            width: 55px;
+            height: 55px;
+            z-index: 100;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translate(-50%,-50%);
+
+            i{
+                font-size: 20px;
+                color: white;
+            }
+        }
+        &__title{
+            margin-top: 58px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    }
+
+    
+}

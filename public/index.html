@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.min.css" />
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="header__logo" style="color: aquamarine;">
+            <img src="./images/logo.png" alt="" height="100px" width="300px">
+        </a>
+        <ul class="header__menu">
+            <li>
+                <a href="#slider" class="nav__item">Home</a>
+            </li>
+            <li>
+                <a href="#furniture" class="nav__item">product</a>
+            </li>
+            <li>
+                <a href="#about" class="nav__item">about</a>
+            </li>
+            <li>
+                <a href="#gallery" class="nav__item">gallery</a>
+            </li>
+            <li>
+                <a href="#new" class="nav__item">news</a>
+            </li>
+        </ul>
+        <div class="header__lang">
+            <span id="lang__value">EN</span>
+            <i class='bx bxs-down-arrow'></i>
+            <!-- sub menu  -->
+            <ul class="header__lang__select">
+                <li class="header__lang__opinion ">
+                    EN
+                </li>
+                <li class="header__lang__opinion">
+                    VI
+                </li>
+            </ul>
+        </div>
+        <!-- toggle -->
+        <div class="header__toggle toggle" id="header__toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <main>
+        <section class="slider" id="slider" >
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slider__item">
+                        <img src="./images/slide.png" height="100vh" width="100%" alt="">
+                        <div class="slider__item__content">
+                            <h2 class="slider__item__title">
+                                Wooder
+                            </h2>
+                            <button class="btn slider__item__button">
+                                <span>learn more</span>
+                                <div class="slider__item__learnMore">
+                                    <span></span>
+                                    <i class='bx bx-chevron-right'></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slider__item">
+                        <img src="./images/slide.png" height="100vh" width="100%" alt="">
+                        <div class="slider__item__content">
+                            <h2 class="slider__item__title">
+                                Wooder
+                            </h2>
+                            <button class="btn slider__item__button">
+                                <span>learn more</span>
+                                <div class="slider__item__learnMore">
+                                    <span></span>
+                                    <i class='bx bx-chevron-right'></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slider__item">
+                        <img src="./images/slide.png" height="100vh" width="100%" alt="">
+                        <div class="slider__item__content">
+                            <h2 class="slider__item__title">
+                                Wooder
+                            </h2>
+                            <button class="btn slider__item__button">
+                                <span>learn more</span>
+                                <div class="slider__item__learnMore">
+                                    <span></span>
+                                    <i class='bx bx-chevron-right'></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button">
+                    <div class="swiper-button-next">
+                        <span></span>
+                        <i class='bx bx-chevron-right'></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-chevron-left'></i>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="swiper-navication">
+                    <div class="swiper-content">
+                        <span></span>
+                        <p class="swiper__value">
+                            01
+                        </p>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="furniture" id="furniture">
+            <div class="container">
+                <div class="row furniture__row furniture__top">
+                    <div class="col--4 furniture__item  ">
+                        <span class="line--text"></span>
+                        <div class="furniture__content">
+                            <h2 class="furniture__title text--title">
+                                Furniture
+                            </h2>
+                            <p class="subtext furniture__subtext">
+                                Wooder utilizes materials otherwise left behind, rendered useless in their original
+                                intent. By creating new pieces made of reclaimed barnwood
+                            </p>
+                            <a href="#" class="furniture__learnMore">
+                                <span class="furniture__learnMore__content">Learn more</span>
+                                <div class="furniture__learnMore__arrow">
+                                    <span></span>
+                                    <i class='bx bxs-right-arrow'></i>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col--6 furniture__item">
+                        <div class="furniture__imager">
+                            <img src="./images/upcycled-furniture-011.png" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row furniture__row furniture__bottom">
+
+                    <div class="col--6 furniture__item">
+                        <div class="furniture__imager">
+                            <img src="./images/funiture__02.png" alt="">
+                        </div>
+
+                    </div>
+                    <div class="col--4 furniture__item ">
+
+                        <div class="furniture__content">
+                            <h2 class="furniture__title text--title">
+                                Decor
+                            </h2>
+                            <p class="subtext furniture__subtext">
+                                We make all types of wooden decor as per design given by Architect,Interior designer,
+                                contractor which is suitable
+                                your premises.
+                            </p>
+                            <a href="#" class="furniture__learnMore">
+                                <span class="furniture__learnMore__content">Learn more</span>
+                                <div class="furniture__learnMore__arrow">
+                                    <span></span>
+                                    <i class='bx bxs-right-arrow'></i>
+                                </div>
+                            </a>
+                        </div>
+                        <span class="line--text"></span>
+                    </div>
+                </div>
+        </section>
+        <section class="video" id="video">
+            <div class="container">
+                <h2 class="video__title text--title">wooder – is quality</h2>
+                <p class="video__subtitle subtext">We create unique design objects made of rare wood, specially under
+                    the order.
+                    Look at the short video about our work.
+                </p>
+                <ul class="video__wrapper">
+                    <li class="video__item">
+                        <div class="video__cand">
+                            <img src="./images/video1.png" alt="">
+                            <div class="video__cand__play">
+                                <i class='bx bxs-right-arrow'></i>
+                            </div>
+                            <div class="video__cand__title">
+
+                                Innovative Design
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="video__item">
+                        <div class="video__cand">
+                            <img src="./images/video2.png" alt="">
+                            <div class="video__cand__play">
+                                <i class='bx bxs-right-arrow'></i>
+                            </div>
+                            <div class="video__cand__title">
+                                High-level Skills
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="video__item">
+                        <div class="video__cand">
+                            <img src="./images/video3.png" alt="">
+                            <div class="video__cand__play">
+                                <i class='bx bxs-right-arrow'></i>
+                            </div>
+                            <div class="video__cand__title">
+                                Quality Products
+                            </div>
+                        </div>
+
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="design" id="design" style="background-image: url(./images/design-bg.png);">
+            <!-- <img src="./images/design-bg.png" alt="" > -->
+            <div class="design__wrapper">
+                <div class="container">
+                    <h2>we Do the design<br />
+                        of any complexity</h2>
+                    <p>
+                        This is a team of professionals that make the furniture and <br />
+                        wood décor high standard. Creating modern designs.<br />
+                        Adhering to the global quality standards. And we are doing work with love.
+                    </p>
+                    <a href="" class="design__button">
+                        <i class='bx bx-play-circle'></i>
+                        <span>watch video</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__wrapper">
+                    <div class="about__item">
+                        <img src="./images/about-us.png" alt="">
+                    </div>
+                    <div class="about__item">
+                        <div class="about__content">
+                            <h2 class="about__title text--title">
+                                About us
+                            </h2>
+                            <p class="subtext">
+                                We are a team of professionals in the wood processing and the creation of wooden
+                                furniture
+                                of the highest class
+                            </p>
+                            <a href="#" class="about__learnMore">
+                                <span class="about__learnMore__content">Learn more</span>
+                                <div class="about__learnMore__arrow">
+                                    <span></span>
+                                    <i class='bx bxs-right-arrow'></i>
+                                </div>
+                            </a>
+                        </div>
+                        <span class="line--text"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <h2 class="gallery__title text--title">gallery</h2>
+                <p class="subtext gallery__subtext">We are a team of professionals in the wood processing and
+                    the creation of wooden furniture of the highest class</p>
+                <div class="gallery__wrapper">
+                    <div class="gallery__wrapper__left">
+                        <div class="gallery__container">
+                            <div class="gallery__item"><img src="./images/gallery_01.png" alt=""></div>
+                            <div class="gallery__item"><img src="./images/galery__02.png" alt=""></div>
+                        </div>
+                        <div class="gallery__item gallery__item__mid"> <img src="./images/gallery__03.png" alt=""></div>
+
+                    </div>
+                    <div class="gallery__wrapper__right">
+                        <div class="gallery__item"><img src="./images/gallery_04.png" alt=""></div>
+                        <div class="gallery__item"><img src="./images/gallery_05.png" alt=""></div>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+
+
+        </section>
+        <section class="new" id="new" >
+            <div class="container">
+                <h2 class="new__title text--title">news</h2>
+                <p class="subtext new__subtext">We are a team of professionals in the wood processing and
+                    the creation of wooden furniture of the highest class</p>
+                <div class="new__nav">
+                    <button class="new__button">Internal</button>
+                    <button class="new__button">External</button>
+                </div>
+
+                <div class="new__wrapper">
+                    <div class="new__item">
+                        <img src="./images/about__1.png" alt="">
+                        <span class="line--text"></span>
+                        <h2 class="new__item__title">Where does it come from?</h2>
+                        <p class="new__item__subtext subtext">Contrary to popular belief, Lorem Ipsum
+                            is not simply random text. It has roots
+                            in a piece of classical Latin literatur...</p>
+                    </div>
+                    <div class="new__item">
+                        <img src="./images/about__2.png" alt="">
+                        <span class="line--text"></span>
+                        <h2 class="new__item__title">Where does it come from?</h2>
+                        <p class="new__item__subtext subtext">Contrary to popular belief, Lorem Ipsum
+                            is not simply random text. It has roots
+                            in a piece of classical Latin literatur...</p>
+                    </div>
+                    <div class="new__item">
+                        <img src="./images/about__3.png" alt="">
+                        <span class="line--text"></span>
+                        <h2 class="new__item__title">Where does it come from?</h2>
+                        <p class="new__item__subtext subtext">Contrary to popular belief, Lorem Ipsum
+                            is not simply random text. It has roots
+                            in a piece of classical Latin literatur...</p>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+
+
+        </section>
+        <section class="SliderDrag" id="SliderDrag" >
+            <div class="SliderDrag__item">
+                <img src="./images/SliderDrag__01.png" alt="">
+            </div>
+            <div class="SliderDrag__item">
+                <img src="./images/SliderDrag__02.png" alt="">
+            </div>
+            <div class="SliderDrag__item">
+                <img src="./images/SliderDrag__03.png" alt="">
+            </div>
+            <div class="SliderDrag__item">
+                <img src="./images/SliderDrag__04.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <p>© 2016 WOODER, Demo by CFD</p>
+            <a href="">
+                <img src="./images/logo.png" alt="">
+            </a>
+            <a href="#slider">
+                <span>back to top</span>
+            </a>
+        </div>
+
+    </footer>
+    <script src="./js/main.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</body>
+
+</html>

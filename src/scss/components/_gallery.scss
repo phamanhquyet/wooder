@@ -1,0 +1,148 @@
+.gallery {
+    background-color: black;
+    padding: 87px 0;
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+    }
+
+    &__subtext {
+        max-width: 457px !important;
+        color: white;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: left;
+        margin: 27px 0;
+    }
+
+
+    &__wrapper {
+        margin: -5px;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+
+        &__left {
+            display: flex;
+            justify-content: space-between;
+            width: 66% !important;
+        }
+
+        &__right {
+            width: 33.99%;
+
+            .gallery__item:nth-child(1) {
+                margin-bottom: 10px;
+            }
+
+            .gallery__item:nth-child(2) {
+                margin-top: 10px;
+            }
+
+            img {
+                max-height: 33.8vh;
+            }
+        }
+    }
+
+    &__item {
+        margin: 5px;
+
+        // width: 32%;
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            // max-height: 407px;
+
+        }
+
+        &__mid {
+            width: 50.99%;
+            max-height: 68.9vh;
+        }
+    }
+
+    &__container {
+        width: 50%;
+
+        .gallery__item:nth-child(1) {
+            margin-bottom: 10px;
+        }
+
+        .gallery__item:nth-child(2) {
+            margin-top: 10px;
+        }
+
+        img {
+            max-height: 33.8vh;
+        }
+    }
+
+    @include sm {
+        &__wrapper {
+
+            flex-direction: column;
+
+            img {
+                filter: grayscale(100%);
+            }
+
+            &__left {
+                width: 100% !important;
+            }
+
+            &__right {
+                width: 100% !important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex: 1;
+                margin-top: -5px;
+
+                .gallery__item {
+                    width: calc(50% - 10px);
+
+                }
+
+                .gallery__item:nth-child(1) {
+                    margin-bottom: 0px;
+                }
+
+                .gallery__item:nth-child(2) {
+                    margin-top: 10px;
+                }
+
+            }
+        }
+
+        &__item {
+            margin: 5px;
+
+            // width: 32%;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                // max-height: 407px;
+
+            }
+
+            &__mid {
+                width: 46.99%;
+                max-height: 68.9vh;
+            }
+
+            
+
+        }
+
+        &__container {}
+    }
+}
